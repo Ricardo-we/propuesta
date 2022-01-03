@@ -1,0 +1,43 @@
+body {
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+#main-container {
+    margin-top: 50px;
+}
+
+#yes-button {
+    width: var(--buttons-width);
+    margin: 0 10px;
+}
+
+#no-button {
+    width: var(--buttons-width);
+    margin: 0 10px;
+    transition: 0.2s;
+    position: relative;
+}
+
+#animation {
+    animation: heart-animation 2s infinite;
+    color: red;
+    font-size: 300px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+@keyframes heart-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+:root {
+    --buttons-width: 100px;
+}
