@@ -2,9 +2,16 @@ const negativeButton = document.getElementById('no-button');
 const yesButton = document.getElementById('yes-button');
 const title = document.getElementById('title');
 const finalPart = document.getElementById('final');
+// const denyText = document.getElementById('denyText');
+
+const denialTexts = [
+    "Di que sí",
+    "¿Segura que no?",
+    "¿De veras de veras?"
+];
 
 function changeButtonPosition(){
-    let moveLength = 400;
+    let moveLength = 200;
     let randomX = Math.round(Math.random() * moveLength);
     let randomY = Math.round(Math.random() * moveLength);
     if(randomX < window.innerWidth && randomY < window.innerHeight){
@@ -12,7 +19,7 @@ function changeButtonPosition(){
         negativeButton.style.left = Math.floor(randomX) - negativeButton.style.width + 'px';
     }
 
-    console.log(window.getComputedStyle(negativeButton).marginTop);
+    title.innerText = denialTexts[Math.floor(Math.random() * denialTexts.length)];
 }
 
 

@@ -56,7 +56,7 @@ body {
 }
 
 h1 {
-    color: white;
+  color: white;
 }
 
 button {
@@ -97,16 +97,34 @@ button:hover {
   color: #111;
 }
 
-
 .d-flex {
-    display:flex;
+  display: flex;
 }
 
-.flex-column { 
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
 
 .d-none {
-    display: none;
+  display: none;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
   }
-  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+svg path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+svg path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 5s linear alternate infinite;
+}

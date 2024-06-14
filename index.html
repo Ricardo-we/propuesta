@@ -15,35 +15,74 @@
     <title>¿Quieres ser mi novia?</title>
   </head>
   <body>
-
     <div
       class="container d-flex flex-column d-none align-items-center justify-content-center"
-      style="justify-content: center; align-items: center; margin-top: 10rem;"
+      style="justify-content: center; align-items: center; margin-top: 10rem"
       id="final"
     >
       <h1 class="text-center">Sabía que sí</h1>
 
-      <img src="./app/assets/gatito-bonito-guiñando-un-ojo.jpg" width="450" height="300" alt="">
-      <i class="fas fa-heart" id="animation"></i>
+      <img
+        src="./app/assets/gatito-bonito-guiñando-un-ojo.jpg"
+        width="450"
+        height="300"
+        alt=""
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        height="315"
+        width="342"
+        viewBox="20 -10 315 342"
+      >
+        <defs>
+          <style type="text/css">
+            <![CDATA[
+                .outline { stroke:none; stroke-width:0 }
+              ]]>
+          </style>
+          <g id="heart">
+            <path
+              stroke="red"
+              pathLength="1"
+              stroke-width="5"
+              d="M0 200 v-200 h200 
+    a100,100 90 0,1 0,200
+    a100,100 90 0,1 -200,0
+    z"
+            />
+          </g>
+        </defs>
+        <desc>a nearly perfect heart made of two arcs and a right angle</desc>
+        <use
+          xlink:href="#heart"
+          class="outline"
+          fill="none"
+          transform="rotate(225,150,121)"
+        />
+      </svg>
     </div>
 
     <div
       class="container d-flex flex-column align-items-center justify-content-center"
       id="main-container"
-      style="margin-top: 20rem;"
+      style="margin-top: 20rem"
       style="margin-block: auto"
     >
       <h1 id="title" style="text-align: center; margin-block: auto">
         ¿QUIERES SER MI NOVIA?
       </h1>
-      
-      <div style="align-items: center; justify-content: center; margin-top: 30px;" class="d-flex w-100">
+
+      <div
+        style="align-items: center; justify-content: center; margin-top: 30px"
+        class="d-flex w-100"
+      >
         <button id="yes-button">SÍ</button>
         <button id="no-button">NO</button>
       </div>
     </div>
 
-    
     <script src="./app/js/index.js"></script>
   </body>
 </html>
