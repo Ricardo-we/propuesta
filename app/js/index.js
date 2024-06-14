@@ -14,6 +14,8 @@ function changeButtonPosition(){
 
     console.log(window.getComputedStyle(negativeButton).marginTop);
 }
+
+
 document.addEventListener('DOMContentLoaded', () => {
     
     negativeButton.addEventListener('mouseenter', changeButtonPosition);

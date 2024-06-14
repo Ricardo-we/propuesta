@@ -1,43 +1,112 @@
+@font-face {
+  font-family: fac;
+  src: url("../assets/RobotoMono-Italic-VariableFont_wght.ttf");
+}
+
 body {
-    background: #ee9ca7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+  background: #f37e8e; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(
+    to right,
+    #f3a9b2,
+    #eca7b0
+  );
+  background: linear-gradient(
+    to right,
+    #ee818e,
+    #f17b8b
+  ); */
+  font-family: fac;
 }
 
 #main-container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 #yes-button {
-    width: var(--buttons-width);
-    margin: 0 10px;
+  width: var(--buttons-width);
+  margin: 0 10px;
 }
 
 #no-button {
-    width: var(--buttons-width);
-    margin: 0 10px;
-    transition: 0.2s;
-    position: relative;
+  width: var(--buttons-width);
+  margin: 0 10px;
+  transition: 0.2s;
+  position: relative;
 }
 
 #animation {
-    animation: heart-animation 2s infinite;
-    color: red;
-    font-size: 300px;
-    align-self: center;
-    margin-top: 20px;
+  animation: heart-animation 2s infinite;
+  color: rgb(240, 55, 55);
+  font-size: 300px;
+  align-self: center;
+  margin-top: 20px;
 }
 
 @keyframes heart-animation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 :root {
-    --buttons-width: 100px;
+  --buttons-width: 100px;
 }
+
+h1 {
+    color: white;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #ee6868;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #ffe3de;
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #f8e5e5;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
+}
+
+
+.d-flex {
+    display:flex;
+}
+
+.flex-column { 
+    flex-direction: column;
+}
+
+.d-none {
+    display: none;
+  }
+  
