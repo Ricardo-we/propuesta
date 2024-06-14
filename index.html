@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootswatch/dist/journal/bootstrap.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    <link rel="stylesheet" href="./app/css/index.css">
-    <title>Quieres ser mi novia?</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./app/css/bootstrap.min.css" /> -->
+    <title>¿Quieres ser mi novia?</title>
+  </head>
+  <body>
 
-    <div class="container d-flex flex-column align-items-center justify-content-center" id="main-container">
-        <h1 id="title">QUIERES SER MI NOVIA?</h1>
-        <button class="btn btn-primary" id="yes-button">SI</button>
-        <button class="btn btn-secondary" id="no-button">NO :(</button>
+    <div
+      class="container d-flex flex-column d-none align-items-center justify-content-center"
+      style="justify-content: center; align-items: center; margin-top: 10rem;"
+      id="final"
+    >
+      <h1 class="text-center">Sabía que sí</h1>
+
+      <img src="./app/assets/gatito-bonito-guiñando-un-ojo.jpg" alt="">
+      <i class="fas fa-heart" id="animation"></i>
     </div>
 
-    <div class="container d-flex flex-column d-none align-items-center justify-content-center" id="final">
-        <h1 class="text-center"> Sabia que sí ❤🥰</h1>
-        <i class="fas fa-heart" id="animation"></i>
+    <div
+      class="container d-flex flex-column align-items-center justify-content-center"
+      id="main-container"
+      style="margin-top: 20rem;"
+      style="margin-block: auto"
+    >
+      <h1 id="title" style="text-align: center; margin-block: auto">
+        ¿QUIERES SER MI NOVIA?
+      </h1>
+      
+      <div style="align-items: center; justify-content: center; margin-top: 30px;" class="d-flex w-100">
+        <button id="yes-button">SÍ</button>
+        <button id="no-button">NO</button>
+      </div>
     </div>
+
     
-    <script src="./app/js/index.js"></script> 
-</body>
+    <script src="./app/js/index.js"></script>
+  </body>
 </html>
