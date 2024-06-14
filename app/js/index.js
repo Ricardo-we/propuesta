@@ -11,8 +11,13 @@ const denialTexts = [
 ];
 
 function changeButtonPosition(){
-    let moveLength = 200;
-    let randomX = Math.round(Math.random() * moveLength);
+    let moveLength = 150;
+    let moveLengthX = 150;
+
+    if(Math.random() > 0.5){ moveLength = -moveLength; }
+    if(Math.random() > 0.5){ moveLengthX = -moveLengthX; }
+
+    let randomX = Math.round(Math.random() * moveLengthX);
     let randomY = Math.round(Math.random() * moveLength);
     if(randomX < window.innerWidth && randomY < window.innerHeight){
         negativeButton.style.top = Math.floor(randomY) - negativeButton.style.height + 'px';
