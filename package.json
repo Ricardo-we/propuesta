@@ -4,7 +4,7 @@
   "description": "Es para alguien",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "test": "start dev"
   },
   "repository": {
     "type": "git",
